@@ -1,7 +1,20 @@
+/*
+
+Eine Netzplan-Anwendung mit dynamischen, modifizierbaren und verschiebbaren, Elementen
+Grafische Darstellung, Berechnung der Zeiten, Hinzufügen und Entfernen von Elemente, Hinzufügen und Entfernen von Verbindungen, Mehrfachverbindungen
+Berechnung und Darstellung des kritischen Pfads, Berechnung und Darstellung der Anfangs- und Endzeiten
+
+Export- und Importfunktion (save&load)
+
+Tabellarische Darstellung der NetzplanElemente, inkl. Beschreibung, Dauer, Vorgänger und Nachfolger
+
+ */
+
+
 class NetzplanElement {
 
 
-    constructor(id, name, faz, fez, saz, sez, dauer, x, y, width = 100, height = 60,nachfolgerIds = []) {
+    constructor(id, name, faz, fez, saz, sez, dauer, x, y,nachfolgerIds = []) {
         this.id = id;
         this.name = name;
         this.faz = faz;
@@ -13,8 +26,8 @@ class NetzplanElement {
         this.dauer = dauer;
         this.x = x;
         this.y = y;
-        this.width = width;
-        this.height = height;
+        this.width = 100;
+        this.height = 60;
         this.nachfolgerIds = nachfolgerIds ;
     }
 

@@ -292,7 +292,7 @@ function showPopup(x, y) {
             return;
         }
 
-        const lastElementId = netzplan.elements.length > 0 ? netzplan.elements.length - 2 : 1;
+        const lastElementId = netzplan.elements.length > 0 ? netzplan.elements.length + 1 : 1;
 
 
         const newElement = new NetzplanElement(0, name, 0, 0, 0, 0, duration, x, y);
